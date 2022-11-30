@@ -57,14 +57,13 @@ $('.center-slider').slick({
 $('#traning_slider').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
-  centerMode: true,
   arrows: true,
   dots: false,
   speed: 200,
   centerPadding: '30px',
   infinite: true,
   autoplaySpeed: 5000,
-  autoplay: false,
+  autoplay: true,
   rtl: rtlVal,
   nextArrow: '.next_training',
   prevArrow: '.previous_training',
@@ -104,7 +103,6 @@ $('#traning_slider').slick({
 $('#match_slider').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
-  centerMode: true,
   arrows: true,
   dots: false,
   speed: 200,

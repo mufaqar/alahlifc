@@ -155,7 +155,7 @@ get_header();
             <h2><?php pll_e('Next Matches'); ?></h2>
         </div>
         <div class="nextmatch_slider container">
-            <div id="match_slider" class="mt-4">
+            <div id="match_slider" class="multiple-items mt-4">
                     <?php query_posts(array(
                     'post_type' => 'matches',
                     'posts_per_page' => -1,
@@ -208,12 +208,12 @@ get_header();
 
     <!-- player section  -->
     <section class="tranning player" id="tranning">
-        <div class="container d-flex justify-content-between align-items-center">
+        <div class="container  d-flex justify-content-between align-items-center">
             <h2><?php pll_e('Tranning'); ?></h2>
 
         </div>
         <div class="container">
-            <div id="traning_slider" class=" mt-4">
+            <div id="traning_slider" class=" multiple-items _playerwrapper mt-4">
 
                 <?php      
                                         

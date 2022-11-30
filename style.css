@@ -776,17 +776,33 @@ footer .social ul li:nth-child(1){
     position: relative;
   
 }
-.tranning  .nav .next_team{
+.tranning  .nav .next_training{
     position: absolute;
     right: 0;
     top: 65%;
     transform: translatey(-65%);
 }
-.tranning  .nav .previous_team{
+.tranning  .nav .previous_training{
     position: absolute;
     left: 0;
     top: 65%;
     transform: translatey(-65%);
+}
+
+/* match Slider navigation*/
+.tranning  .nav .next_match{
+    position: absolute;
+    right: 0;
+    top: 65%;
+    transform: translatey(-65%);
+    background-color: var(--green);
+}
+.tranning  .nav .previous_match{
+    position: absolute;
+    left: 0;
+    top: 65%;
+    transform: translatey(-65%);
+    background-color: var(--green);
 }
 
 
