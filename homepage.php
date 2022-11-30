@@ -155,13 +155,11 @@ get_header();
             <h2><?php pll_e('Next Matches'); ?></h2>
         </div>
         <div class="nextmatch_slider container">
-            <div class="match_slider mt-4">
-
+            <div id="match_slider" class="mt-4">
                     <?php query_posts(array(
                     'post_type' => 'matches',
                     'posts_per_page' => -1,
-                    'order' => 'desc'
-			
+                    'order' => 'desc'			
                          )); 
                     if (have_posts()) :  while (have_posts()) : the_post(); ?>
                             <div class="record m-2">
@@ -198,10 +196,10 @@ get_header();
 
             </div>
             <div class="nav">
-                <div class="next_team">
+                <div class="next_btn next_match">
                     <i class="fa-solid fa-angle-right"></i>
                 </div>
-                <div class="previous_team">
+                <div class="previous_btn previous_match">
                     <i class="fa-solid fa-angle-left"></i>
                 </div>
             </div>
@@ -215,7 +213,7 @@ get_header();
 
         </div>
         <div class="container">
-            <div class="multiple-items _playerwrapper mt-4">
+            <div id="traning_slider" class=" mt-4">
 
                 <?php      
                                         
@@ -243,10 +241,10 @@ get_header();
 
             </div>
             <div class="nav">
-                <div class="next_team">
+                <div class="next_btn next_training">
                     <i class="fa-solid fa-angle-right"></i>
                 </div>
-                <div class="previous_team">
+                <div class="previous_btn previous_training">
                     <i class="fa-solid fa-angle-left"></i>
                 </div>
             </div>
@@ -327,10 +325,10 @@ get_header();
                 </div>
             </div>
             <div class="nav">
-                <div class="next_team">
+                <div class="next_btn next_team">
                     <i class="fa-solid fa-angle-right"></i>
                 </div>
-                <div class="previous_team">
+                <div class="previous_btn previous_team">
                     <i class="fa-solid fa-angle-left"></i>
                 </div>
             </div>
