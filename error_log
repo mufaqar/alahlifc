@@ -1,0 +1,4 @@
+[12-Nov-2022 05:55:11 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home1/ewbgpmmy/public_html/wp-content/themes/alahlifc/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home1/ewbgpmmy/public_html/wp-content/themes/alahlifc/index.php on line 15
