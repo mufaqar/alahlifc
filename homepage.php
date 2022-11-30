@@ -8,10 +8,10 @@ get_header();
 ?>
     <!-- blogs  -->
     <section class="container mb-5" id="news">
-        <div class="news text-center d-flex justify-content-between flex-column flex-md-row align-items-center">
+        <div class="news d-flex justify-content-between flex-column flex-md-row align-items-center">
             <h2><?php pll_e('Alahlifc News'); ?></h2>
             <div class="d-flex align-items-center flex-column flex-md-row">
-                <ul class="d-flex flex-wrap justify-content-center">
+                <ul class="d-flex flex-wrap p-0">
                 <?php                                
                                      $category_tax = get_terms( array('taxonomy' => 'category','hide_empty' => false ) ); 
                                           foreach( $category_tax as $cate ) 
