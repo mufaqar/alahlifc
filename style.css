@@ -779,13 +779,13 @@ footer .social ul li:nth-child(1){
 .tranning  .nav .next_training{
     position: absolute;
     right: 0;
-    top: 65%;
+    top: 50%;
     transform: translatey(-65%);
 }
 .tranning  .nav .previous_training{
     position: absolute;
     left: 0;
-    top: 65%;
+    top: 50%;
     transform: translatey(-65%);
 }
 
