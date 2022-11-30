@@ -432,21 +432,18 @@ section .news ul li a:hover{
 }
 
 /* tranning section  */
-.tranning .right-side-slider .card-item{
+.tranning .multiple-items .card-item{
     min-height: 22.3rem;
 }
 
-.tranning .right-side-slider{
-    margin-left: 9%;
-    margin-right: -12rem;
-}
-.tranning .right-side-slider .card-item h4{
+
+.tranning .multiple-items .card-item h4{
     font-family: var(--osward);
     color: var(--white);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-.tranning .right-side-slider .card-item p{
+.tranning .multiple-items .card-item p{
     color: var(--white);
     font-weight: 300;
     font-size: 16px;
@@ -760,8 +757,37 @@ footer .social ul li:nth-child(1){
     transform: translatey(-65%);
 }
 
+/*Training slider navigation*/
 
 
+.tranning .nav i{
+    cursor: pointer;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.tranning .nav>div{
+    border: 1px solid white !important;
+    padding: .6rem 1.2rem;
+    padding-top: .9rem;
+    border-radius: 5px;
+}
+.tranning  .container{
+    position: relative;
+  
+}
+.tranning  .nav .next_team{
+    position: absolute;
+    right: 0;
+    top: 65%;
+    transform: translatey(-65%);
+}
+.tranning  .nav .previous_team{
+    position: absolute;
+    left: 0;
+    top: 65%;
+    transform: translatey(-65%);
+}
 
 
 .mtch-reslt{
@@ -1020,10 +1046,7 @@ footer .social ul li:nth-child(1){
     margin-right: 0;
 }
 
-.rtl .tranning .right-side-slider {
-    margin-right: 9%;
-    margin-left: -12rem;
-}
+
 
 .rtl header nav .main_nav ul {
     margin-right: 8rem;
@@ -1042,15 +1065,15 @@ footer .social ul li:nth-child(1){
 }
 
 
-.right-side-slider .slick-prev {
+.multiple-items .slick-prev {
     left: 80px;
 }
 
-.right-side-slider .slick-next {
+.multiple-items .slick-next {
     right: auto;
 }
 
-.right-side-slider .slick-arrow {
+.multiple-items .slick-arrow {
     position: absolute;
     bottom: -40px;
     background: var(--green);
@@ -1074,7 +1097,7 @@ footer .social ul li:nth-child(1){
     border: none;
 }
 
-.rtl .right-side-slider .slick-prev {
+.rtl .multiple-items .slick-prev {
     left: auto;
     right: 80px;
 }
@@ -1128,11 +1151,11 @@ footer .social ul li:nth-child(1){
     header nav .main_nav .logo img{
         width: auto;
     }
-    .tranning .right-side-slider{
+    .tranning .multiple-items{
         margin-left: 0;
         margin-right: 0;
     }
-    .rtl .tranning .right-side-slider {
+    .rtl .tranning .multiple-items {
         margin-left: 0;
         margin-right: 0;
     }
@@ -1198,19 +1221,15 @@ footer .social ul li:nth-child(1){
         margin-right: 5px;
     }
     
-    .right-side-slider .slick-next {
+    .multiple-items .slick-next {
         right: auto;
         left: 10px;
     }
     
-    .rtl .right-side-slider .slick-next {
+    .rtl .multiple-items .slick-next {
         right: 10px;
         left: auto;
     }
-
-
-
-
 
 }
 
