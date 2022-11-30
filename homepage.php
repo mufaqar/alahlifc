@@ -155,47 +155,55 @@ get_header();
             <h2><?php pll_e('Next Matches'); ?></h2>
         </div>
         <div class="nextmatch_slider container">
-            <div class="multiple-items mt-4">
+            <div class="match_slider mt-4">
 
-            <?php query_posts(array(
-            'post_type' => 'matches',
-            'posts_per_page' => -1,
-			'order' => 'desc'
+                    <?php query_posts(array(
+                    'post_type' => 'matches',
+                    'posts_per_page' => -1,
+                    'order' => 'desc'
 			
-        )); 
-		if (have_posts()) :  while (have_posts()) : the_post(); ?>
-                <div class="record m-2">
-                    <div class="record-wrapper">
-                        <div class="p-4">
-                            
-                            <h6><?php the_field('match_date'); ?></h6>
-                            <div class="score_wrapper">
-                                <div class="score d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center">
-                                        <img src="<?php the_field('team_image_one'); ?>" alt="Team Logo">
-                                        <p><?php the_field('team_title_one'); ?></p>
+                         )); 
+                    if (have_posts()) :  while (have_posts()) : the_post(); ?>
+                            <div class="record m-2">
+                                <div class="record-wrapper">
+                                    <div class="p-4">
+                                        
+                                        <h6><?php the_field('match_date'); ?></h6>
+                                        <div class="score_wrapper">
+                                            <div class="score d-flex justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="<?php the_field('team_image_one'); ?>" alt="Team Logo">
+                                                    <p><?php the_field('team_title_one'); ?></p>
+                                                </div>
+                                                <h6><?php the_field('score_team_one'); ?></h6>
+                                            </div>
+                                            <!-- 2nd -->
+                                            <div class="score d-flex justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="<?php the_field('team_image_two'); ?>" alt="Team Logo">
+                                                    <p><?php the_field('team_title_two'); ?></p>
+                                                </div>
+                                                <h6><?php the_field('score_team_two'); ?></h6>
+                                            </div>
+                                        </div>
+
                                     </div>
-                                    <h6><?php the_field('score_team_one'); ?></h6>
-                                </div>
-                                <!-- 2nd -->
-                                <div class="score d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center">
-                                        <img src="<?php the_field('team_image_two'); ?>" alt="Team Logo">
-                                        <p><?php the_field('team_title_two'); ?></p>
-                                    </div>
-                                    <h6><?php the_field('score_team_two'); ?></h6>
                                 </div>
                             </div>
 
-                        </div>
-                    </div>
+                            <?php endwhile; wp_reset_query(); else : ?>
+                        <h2><?php _e('Nothing Found','lbt_translate'); ?></h2>
+                        <?php endif; ?> 
+
+
+            </div>
+            <div class="nav">
+                <div class="next_team">
+                    <i class="fa-solid fa-angle-right"></i>
                 </div>
-
-                <?php endwhile; wp_reset_query(); else : ?>
-			<h2><?php _e('Nothing Found','lbt_translate'); ?></h2>
-	        <?php endif; ?> 
-
-
+                <div class="previous_team">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
             </div>
         </div>
    </section>
