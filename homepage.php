@@ -80,7 +80,6 @@ get_header();
         )); 
 		if (have_posts()) :  while (have_posts()) : the_post(); ?>
 
-
                     <div class="col-md-5">
                         <div class="last-match-result-one last-match-result">
                             <div class="col-md-12">  
