@@ -348,7 +348,7 @@ get_header('home');
         </div>
         <div class="container ">
 			
-            <div class="row gx-md-4 gy-4">
+            <div class="row row-cols-md-4 row-cols-auto">
 
                         <?php query_posts(array(
                         'post_type' => 'partners',
@@ -356,7 +356,7 @@ get_header('home');
                         'order' => 'desc',
                     )); 
                     if (have_posts()) :  while (have_posts()) : the_post(); ?>
-                    <div class="col-md-3 col-12 partner ">
+                    <div class="col partner ">
 
                         <?php if ( has_post_thumbnail() ) {
                                                 the_post_thumbnail('full');
