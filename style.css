@@ -9,11 +9,53 @@ Version: 1.2.2
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
+@font-face {
+    font-family: 'dubai_bold';
+    src: url('dubaiw23-bold.woff2') format('woff2'),
+         url('dubaiw23-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'dubai_light';
+    src: url('dubaiw23-light.woff2') format('woff2'),
+         url('dubaiw23-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'dubai_medium';
+    src: url('dubaiw23-medium.woff2') format('woff2'),
+         url('dubaiw23-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dubai_regular';
+    src: url('dubaiw23-regular.woff2') format('woff2'),
+         url('dubaiw23-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 body, html{
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
+
+.rtl  {
+
+  
+        font-family: 'dubai_regular';
+     
+    
+}
+
 header{
     width: 100%;
     height: 100vh;
