@@ -2,7 +2,7 @@
 Theme URI: http://mufaqar.com 
 Author URI: https://mufaqar.com
 Description: Description 
-Version: 1.2.2
+Version: 2.0.1
  Text Domain: alahlifc-theme */
 
 /* import Fonts  */
@@ -1123,6 +1123,10 @@ footer .social ul li:nth-child(1){
 }
 .newsection 
 { background: #11765a; padding: 30px 0;}
+
+.inner_header { height: 350px;}
+
+.inner_header main .content { height: 350px;}
 
 
 

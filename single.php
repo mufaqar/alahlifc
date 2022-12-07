@@ -7,33 +7,30 @@
  * @package CT_Custom
  */
 
-get_header();
+get_header('inner');
 ?>
 
-<div class="team-banner">
-       <div class="banner-content">
-        <h1><?php the_title()?></h1>    
-       </div>
-    </div>
 
 	<div class="page-sections pt-5 pb-5">
            <div class="container">           
                 <div class="row">
-							<?php
-							while ( have_posts() ) :
-								the_post();
-
-								get_template_part( 'template-parts/content', get_post_type() );
-
-								the_post_navigation();
-
-								// If comments are open or we have at least one comment, load up the comment template.
-								if ( comments_open() || get_comments_number() ) :
-									comments_template();
-								endif;
-
-							endwhile; // End of the loop.
-							?>
+				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+				<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
+					<h1><?php the_title(); ?></h1>			
+					<div class="entry">
+					<?php if ( has_post_thumbnail() ) { ?>
+							<div class="featured-image">
+									<?php the_post_thumbnail( 'single-post-thumbnail' ); ?>
+							</div>
+						<?php } ?>		
+						<?php the_content(); ?>
+						<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
+						
+					</div>
+				</div>
+				<?php edit_post_link(__('Edit','text_domain'),'','.'); ?>
+				<?php //comments_template(); ?>
+			<?php endwhile; endif; ?>
 
 				</div><!-- #row -->
 			</div><!-- #container -->
