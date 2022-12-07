@@ -57,7 +57,7 @@ $minutes = get_field('minutes', 'option');
 
 ?>
 
-<header style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(<?php echo $slider_image?>);" class="inner_header">
+<header style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(<?php echo $slider_image?>);" class="inner_header mb-5">
         <nav>
             <div class="main_nav">
                 <div class="container mx-auto d-flex align-items-center justify-content-between">
@@ -98,22 +98,13 @@ $minutes = get_field('minutes', 'option');
                 </div>
             </div>
         </nav>
-
         <main>
             <div class="container">
                 <div class="row">
-                    <div class="content col-md-6">
-                        <h1><?php the_title()?></h1>                      
-                        
-                    </div>
-                    
+                    <div class="content">
+                        <h1><?php the_title()?></h1>     
+                    </div>                    
                 </div>
-
             </div>
         </main> 
-
-        
-
-       
-
     </header>
