@@ -3,7 +3,7 @@
 /**
  * Template Name: Home 
  */
-get_header();
+get_header('home');
 
 ?>
     <!-- blogs  -->

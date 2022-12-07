@@ -7,7 +7,7 @@
  * @package CT_Custom
  */
 
-get_header('inner');
+get_header();
 ?>
 
 
