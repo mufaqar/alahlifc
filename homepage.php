@@ -383,4 +383,37 @@ get_header();
     </section>
 
 
+      <!-- player section  -->
+      <section class="newsection">       
+        <div class="container">
+            <div  class="row">               
+          
+                    <div class="col ">
+                        <img src="<?php bloginfo('template_directory'); ?>/images/ar1.jpeg" class="img-fluid"  />
+                      
+                        
+                    </div>
+               
+          
+                    <div class="col ">
+                        <img src="<?php bloginfo('template_directory'); ?>/images/ar2.jpeg" class="img-fluid"  />
+                        
+                    </div>
+               
+          
+                    <div class="col ">
+                        <img src="<?php bloginfo('template_directory'); ?>/images/ar3.jpeg" class="img-fluid"  />
+                        
+                    </div>
+             
+
+                   
+
+            </div>
+            
+        </div>
+    </section>
+
+
     <?php get_footer()?>
+   
