@@ -356,7 +356,7 @@ get_header('home');
 			'order' => 'desc',
         )); 
 		if (have_posts()) :  while (have_posts()) : the_post(); ?>
-         <div class="d-flex justify-content-center partner">
+         <div class="col-4 partner">
 
             <?php if ( has_post_thumbnail() ) {
                                     the_post_thumbnail('full');
