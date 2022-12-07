@@ -347,10 +347,7 @@ get_header('home');
          
         </div>
         <div class="container mx-auto">
-			<div class="d-flex justify-content-center">
-
-            <img width="500" height="300" src="https://i0.wp.com/ewb.gpm.mybluehost.me/wp-content/uploads/2022/11/شركة-وسط-جدة-للتطوير.png?fit=300%2C200&amp;ssl=1" class="attachment-full size-full wp-post-image" alt="" decoding="async" loading="lazy">
-            </div>
+			
             <div class="row row-cols-md-4 row-cols-auto ">
 
             <?php query_posts(array(
