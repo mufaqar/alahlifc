@@ -1128,6 +1128,9 @@ footer .social ul li:nth-child(1){
 
 .inner_header main .content { height: 350px;}
 
+.featured-image { margin-bottom:20px ;}
+.featured-image img{ border-radius: 10px;}
+
 
 
 /* mediaQuries */
