@@ -348,7 +348,7 @@ get_header('home');
         </div>
         <div class="container mx-auto">
 			
-            <div class="row gx-3 row-cols-md-4 row-cols-auto ">
+            <div class="row gx-3  ">
 
             <?php query_posts(array(
             'post_type' => 'partners',
