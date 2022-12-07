@@ -1124,9 +1124,9 @@ footer .social ul li:nth-child(1){
 .newsection 
 { background: #11765a; padding: 30px 0;}
 
-.inner_header { height: 350px;}
+.inner_header { height: 480px;}
 
-.inner_header main .content { height: 350px;}
+.inner_header main .content { height: 480px;}
 
 .featured-image { margin-bottom:20px ;}
 .featured-image img{ border-radius: 10px;}

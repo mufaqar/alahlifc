@@ -12,7 +12,7 @@
  * @package CT_Custom
  */
 
-get_header();
+get_header('inner');
 ?>
 
 
