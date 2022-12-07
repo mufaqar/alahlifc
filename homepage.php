@@ -342,13 +342,13 @@ get_header('home');
     
      <!-- Our Partners section  -->
      <section class="tranning mt-5 mb-5">
-        <div class="container mx-auto">
+        <div class="container">
             <h2><?php pll_e('Our Partners'); ?></h2>
          
         </div>
-        <div class="container mx-auto">
+        <div class="container ">
 			
-            <div class="row gx-3  ">
+            <div class="row row-cols-md-4 row-cols-auto">
 
             <?php query_posts(array(
             'post_type' => 'partners',
@@ -356,7 +356,7 @@ get_header('home');
 			'order' => 'desc',
         )); 
 		if (have_posts()) :  while (have_posts()) : the_post(); ?>
-         <div class="col-4 partner">
+         <div class="col partner ">
 
             <?php if ( has_post_thumbnail() ) {
                                     the_post_thumbnail('full');
