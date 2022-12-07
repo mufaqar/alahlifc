@@ -1131,6 +1131,9 @@ footer .social ul li:nth-child(1){
 .featured-image { margin-bottom:20px ;}
 .featured-image img{ border-radius: 10px;}
 
+.partner {     border: 4px solid var(--green);
+    margin-top: 5.5rem; padding: 5px; border-radius: 5px;}
+
 
 
 /* mediaQuries */
