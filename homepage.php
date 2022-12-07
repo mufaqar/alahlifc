@@ -348,36 +348,36 @@ get_header('home');
         </div>
         <div class="container ">
 			
-            <div class="row row-cols-md-4 row-cols-auto">
+            <div class="row gx-md-4 gy-4">
 
-            <?php query_posts(array(
-            'post_type' => 'partners',
-            'posts_per_page' => -1,
-			'order' => 'desc',
-        )); 
-		if (have_posts()) :  while (have_posts()) : the_post(); ?>
-         <div class="col partner ">
+                        <?php query_posts(array(
+                        'post_type' => 'partners',
+                        'posts_per_page' => -1,
+                        'order' => 'desc',
+                    )); 
+                    if (have_posts()) :  while (have_posts()) : the_post(); ?>
+                    <div class="col-md-3 col-12 partner ">
 
-            <?php if ( has_post_thumbnail() ) {
-                                    the_post_thumbnail('full');
-                                } else { ?>
-                            <img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="Featured Thumbnail" />
-                            <?php } ?>
+                        <?php if ( has_post_thumbnail() ) {
+                                                the_post_thumbnail('full');
+                                            } else { ?>
+                                        <img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="Featured Thumbnail" />
+                                        <?php } ?>
 
-                                </div>
-	
-	
-	
-	
-		  <?php endwhile; wp_reset_query(); else : ?>
-			<h2><?php _e('Nothing Found','lbt_translate'); ?></h2>
-	        <?php endif; ?> 
+                       </div>
+                
+                
+                
+                
+                    <?php endwhile; wp_reset_query(); else : ?>
+                        <h2><?php _e('Nothing Found','lbt_translate'); ?></h2>
+                        <?php endif; ?> 
 	
                 
-                    
+                        
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
       <!-- player section  -->
