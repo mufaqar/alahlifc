@@ -381,7 +381,7 @@ get_header('home');
 
 
       <!-- player section  -->
-      <section class="newsection">       
+      <section class="newsection" id="membership">       
         <div class="container">
             <div  class="row">               
           
