@@ -420,22 +420,13 @@ get_header('home');
         </div>
     </section>
 
-
     <?php get_footer()?>
-
-
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-	<script>
-		!window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
-	</script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/resources/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/resources/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/resources/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
     <script type="text/javascript">
 		$(document).ready(function() {
-			
-
-		
 			$("a[rel=example_group]").fancybox({
 				'transitionIn'		: 'none',
 				'transitionOut'		: 'none',
@@ -443,8 +434,6 @@ get_header('home');
 				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
 					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
 				}
-			});
-
-		
+			});		
 		});
 	</script>
