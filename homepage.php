@@ -85,7 +85,7 @@ get_header('home');
                             <div class="col-md-12">  
                                 <div class="result-details">
                                     <h3 class="result-details-left">
-                                        <a href="#"><?php the_field('team_title_one'); ?> </a>
+                                        <a href="<?php echo home_url('/matches'); ?>"><?php the_field('team_title_one'); ?> </a>
                                     </h3>
                                     <?php if( have_rows('team_members_team1') ): ?>
                                             <ul class="p-0">
@@ -98,7 +98,7 @@ get_header('home');
                                             </ul>
                                         <?php endif; ?>
                                     <div class="last-match-logo">
-                                        <a href="#"><img src="<?php the_field('team_image_one'); ?>" alt="Team Logo"></a>
+                                        <a href="<?php echo home_url('/matches'); ?>"><img src="<?php the_field('team_image_one'); ?>" alt="Team Logo"></a>
                                     </div>
                                 </div>
                             </div>
