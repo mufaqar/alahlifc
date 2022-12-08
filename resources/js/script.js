@@ -15,4 +15,3 @@ function closeMobileMenu() {
   openNavBtn.style.display = 'block';
   menu.style.top = '-40rem';
 }
-
