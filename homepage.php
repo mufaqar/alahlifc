@@ -426,8 +426,8 @@ get_header('home');
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/resources/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/resources/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
     <script type="text/javascript">
-		$(document).ready(function() {
-			$("a[rel=example_group]").fancybox({
+		jQuery(document).ready(function() {
+			jQuery("a[rel=example_group]").fancybox({
 				'transitionIn'		: 'none',
 				'transitionOut'		: 'none',
 				'titlePosition' 	: 'over',
