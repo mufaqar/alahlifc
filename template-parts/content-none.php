@@ -10,9 +10,7 @@
 ?>
 
 <section class="no-results not-found">
-	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'ct-custom' ); ?></h1>
-	</header><!-- .page-header -->
+	
 
 	<div class="page-content">
 		<?php
@@ -41,9 +39,19 @@
 		else :
 			?>
 
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'ct-custom' ); ?></p>
+			
+<div class="d-flex flex-row mb-3 shadow p-0">
+                        
+                        <div class="col-8 p-3 ">
+                          
+                            <h4 class="mb-3"><a href=""><p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. ', 'ct-custom' ); ?></p></a></h4>
+                           
+                        </div>
+                    </div>
+
+			
 			<?php
-			get_search_form();
+			//get_search_form();
 
 		endif;
 		?>
