@@ -30,7 +30,10 @@ get_header('home');
                                              
                                            ?>
                 </ul>
-                <a href="<?php echo get_the_permalink(38); ?>" class="btn bluebtn view mt-3 mt-md-0"><?php pll_e('View All'); ?></a>
+                <a href="<?php
+                
+                $newlink = pll_get_post( 38 );
+                echo get_the_permalink($newlink); ?>" class="btn bluebtn view mt-3 mt-md-0"><?php pll_e('View All'); ?></a>
             </div>
         </div>
         <div class="blogwrapper row">
