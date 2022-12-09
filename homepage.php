@@ -94,7 +94,7 @@ get_header('home');
                             <div class="col-md-12">  
                                 <div class="result-details">
                                     <h3 class="result-details-left">
-                                        <a href="<?php echo home_url('/matches'); ?>"><?php the_field('team_title_one'); ?> </a>
+                                        <a href="<?php echo get_the_permalink(pll_get_post(121));  ?>"><?php the_field('team_title_one'); ?> </a>
                                     </h3>
                                     <?php if( have_rows('team_members_team1') ): ?>
                                             <ul class="p-0">
@@ -107,7 +107,7 @@ get_header('home');
                                             </ul>
                                         <?php endif; ?>
                                     <div class="last-match-logo">
-                                        <a href="<?php echo home_url('/matches'); ?>"><img src="<?php the_field('team_image_one'); ?>" alt="Team Logo"></a>
+                                        <a href="<?php echo get_the_permalink(pll_get_post(121));  ?>"><img src="<?php the_field('team_image_one'); ?>" alt="Team Logo"></a>
                                     </div>
                                 </div>
                             </div>
@@ -122,10 +122,10 @@ get_header('home');
                             <div class="col-md-12">
                                 <div class="result-details">
                                     <div class="last-match-logo-right">
-                                         <a href="#"><img src="<?php the_field('team_image_two'); ?>" alt="Team Logo"></a>
+                                         <a href="<?php echo get_the_permalink(pll_get_post(121));  ?>"><img src="<?php the_field('team_image_two'); ?>" alt="Team Logo"></a>
                                     </div>
                                     <h3 class="result-details-right">
-                                        <a href="#">
+                                        <a href="<?php echo get_the_permalink(pll_get_post(121));  ?>">
                                         <?php the_field('team_title_two'); ?>
                                         </a>
                                     </h3>
