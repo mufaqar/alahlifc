@@ -42,9 +42,9 @@
 			
 <div class="d-flex flex-row mb-3 shadow p-0">
                         
-                        <div class="col-8 p-3 ">
+                        <div class="col-12 p-3 ">
                           
-                            <h4 class="mb-3"><a href=""><p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. ', 'ct-custom' ); ?></p></a></h4>
+                            <h4 class="m-3"><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. ', 'ct-custom' ); ?></h4>
                            
                         </div>
                     </div>
