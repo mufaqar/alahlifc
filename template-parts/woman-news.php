@@ -11,7 +11,7 @@
             <div class="col d-flex flex flex-column">                
                 <div class="subfeature row mt-4 p-md-0 p-3">
                 <?php query_posts(array(
-                    'post_type' => 'post',
+                    'post_type' => 'womain_news',
                     'posts_per_page' => -1,
                     'order' => 'desc'
                     
