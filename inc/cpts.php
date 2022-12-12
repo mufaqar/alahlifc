@@ -238,16 +238,16 @@ function cptui_register_my_taxes() {
 add_action( 'init', 'cptui_register_my_taxes' );
 
 
-function cptui_register_my_cpts_womain_news() {
+function cptui_register_my_cpts_woman_sports() {
 
 
 $labels = [
-	"name" => __( "Woman News", "hello-elementor" ),
-	"singular_name" => __( "Training", "hello-elementor" ),
+	"name" => __( "Woman Sports", "hello-elementor" ),
+	"singular_name" => __( "Woman Sport", "hello-elementor" ),
 ];
 
 $args = [
-	"label" => __( "Woman News", "hello-elementor" ),
+	"label" => __( "Woman Sports", "hello-elementor" ),
 	"labels" => $labels,
 	"description" => "",
 	"public" => true,
@@ -264,16 +264,16 @@ $args = [
 	"capability_type" => "post",
 	"map_meta_cap" => true,
 	"hierarchical" => false,
-	"rewrite" => [ "slug" => "womain_news", "with_front" => true ],
+	"rewrite" => [ "slug" => "woman_sports", "with_front" => true ],
 	"query_var" => true,
 	"supports" => [ "title", "editor", "thumbnail" ],
 	"show_in_graphql" => false,
 ];
 
-register_post_type( "womain_news", $args );
+register_post_type( "woman_sports", $args );
 }
 
-add_action( 'init', 'cptui_register_my_cpts_womain_news' );
+add_action( 'init', 'cptui_register_my_cpts_woman_sports' );
 
 
 function cptui_register_my_cpts_matchresult() {

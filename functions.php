@@ -143,7 +143,7 @@ add_action('init', function() {
     pll_register_string('alahlifc_domain', 'Next Match');
     pll_register_string('alahlifc_domain', 'Match center');
 	pll_register_string('alahlifc_domain', 'Managements');
-	pll_register_string('alahlifc_domain', 'Woman News');
+	pll_register_string('alahlifc_domain', 'Women Sports');
 
 });
 
