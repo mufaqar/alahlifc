@@ -1,8 +1,7 @@
 
  <!-- blogs  -->
 
- News
- <section class="container mb-5" id="news">
+ <section class="container mb-5" id="woman_news">
         <div class="news d-flex justify-content-between flex-column flex-md-row align-items-center">
             <h2><?php pll_e('Woman News'); ?></h2>
            
