@@ -72,13 +72,11 @@ get_header();
                                     </a>
                                 </div>
                                 <div class="col-md-3 col-5 League_icon d-flex justify-content-end">
-                                    <figure>
-                                        <img src="http://demo.mufaqar.com//dev2/wp-content/themes/alahlifc-theme/resources/img/comp.png"/>
-                                    </figure>
+                                   
                                 </div>
                                 <hr/>
                             </div>
-                            <a href="#">
+                            <p>
                                 <div class="card_body row mb-3">
                                     <div class="row">
                                         <div class="col-5 d-flex flex-md-row flex-column justify-content-between align-items-center">
@@ -98,7 +96,7 @@ get_header();
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </p>
                             <div class="card_footer row d-flex justify-content-between align-items-center">
                                 <hr/>
                                 <div class="col-md-7 col-12 event_info">
