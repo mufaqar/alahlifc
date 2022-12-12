@@ -6,7 +6,7 @@
         </div>
         <div class="container ">
 			
-            <div class="row row-cols-md-4 row-cols-auto">
+            <div class="row row-cols-md-4 row-cols-auto justify-content-center">
 
                         <?php query_posts(array(
                         'post_type' => 'partners',
