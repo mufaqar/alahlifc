@@ -6,7 +6,7 @@
         </div>
         <div class="container ">
 			
-            <div class="row row-cols-md-4 row-cols-auto justify-content-center align-items-center">
+            <div class="row row-cols-md-4 row-cols-auto justify-content-center ">
 
                         <?php query_posts(array(
                         'post_type' => 'partners',
@@ -14,7 +14,7 @@
                         'order' => 'desc',
                     )); 
                     if (have_posts()) :  while (have_posts()) : the_post(); ?>
-                    <div class="col partner ">
+                    <div class="col partner align-items-center">
                         <?php if ( has_post_thumbnail() ) {
                                                 the_post_thumbnail('full');
                                             } else { ?>
