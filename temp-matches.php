@@ -102,19 +102,19 @@ get_header();
                             <div class="card_footer row d-flex justify-content-between align-items-center">
                                 <hr/>
                                 <div class="col-md-7 col-12 event_info">
-                                    <a href="#">News & Video 
+                                    <span >News & Video 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                                         </svg>
-                                    </a>
-                                    <a href="#">Ticket Info
+                                    </span>
+                                    <span >Ticket Info
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                                         </svg>
-                                    </a>
+                                    </span>
                                 </div>
                                 <div class="col-md-5 col-12">
-                                    <a href="#">
+                                    <span >
                                         <div class="broadcaster d-flex justify-content-md-end align-items-center">
                                             <p><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-volume-down" viewBox="0 0 16 16">
                                                 <path d="M9 4a.5.5 0 0 0-.812-.39L5.825 5.5H3.5A.5.5 0 0 0 3 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 9 12V4zM6.312 6.39 8 5.04v5.92L6.312 9.61A.5.5 0 0 0 6 9.5H4v-3h2a.5.5 0 0 0 .312-.11zM12.025 8a4.486 4.486 0 0 1-1.318 3.182L10 10.475A3.489 3.489 0 0 0 11.025 8 3.49 3.49 0 0 0 10 5.525l.707-.707A4.486 4.486 0 0 1 12.025 8z"/>
@@ -123,7 +123,7 @@ get_header();
                                                 <img src="http://demo.mufaqar.com//dev2/wp-content/themes/alahlifc-theme/resources/img/skysports.png"/>
                                             </figure>
                                         </div>
-                                    </a>
+                                    </span>
                                 </div>
                             </div>                      
                         </div>
