@@ -65,11 +65,11 @@ get_header();
                         <div class="accordion-body">
                             <div class="card_header row d-flex justify-content-between align-items-center">
                                 <div class="col-md-9 col-7 event_info d-flex align-items-center">
-                                    <a href="#">
+                                  
                                         <p><?php the_field('match_date'); ?> <span> | </span> Emirates Stadium                                    
                                     
                                     </p>
-                                    </a>
+                                   
                                 </div>
                                 <div class="col-md-3 col-5 League_icon d-flex justify-content-end">
                                    
