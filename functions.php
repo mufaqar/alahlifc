@@ -115,6 +115,19 @@ add_filter('wp_nav_menu_objects', 'add_first_and_last');
 include_once('inc/cpts.php');
 
 
+if( function_exists('acf_add_options_page') ) {	
+	acf_add_options_page();
+}
+
+if( function_exists('acf_add_options_page') ) {	
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Footer Settings',
+		'menu_title'	=> 'Footer',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+	
+}
 
 
 /* TRANSLATIONS  */
@@ -146,23 +159,4 @@ add_action('init', function() {
 	pll_register_string('alahlifc_domain', 'Women Sports');
 
 });
-
-
-if( function_exists('acf_add_options_page') ) {
-	
-	acf_add_options_page();
-	
-}
-
-if( function_exists('acf_add_options_page') ) {
-	
-	
-	
-	acf_add_options_sub_page(array(
-		'page_title' 	=> 'Theme Footer Settings',
-		'menu_title'	=> 'Footer',
-		'parent_slug'	=> 'theme-general-settings',
-	));
-	
-}
 
