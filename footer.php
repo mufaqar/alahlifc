@@ -1,20 +1,34 @@
      <!-- cta  -->
-   <div class="cta">
+    <!-- player section  -->
+    <section class="newsection" id="membership">       
         <div class="container">
-            <div class="_content">
-                <h2><?php pll_e('JOIN AS A Alahlifc Sports AND GET ALL THE BENEFITS!'); ?></h2>
-                <div class="cta-form mt-3">
-                    <form action="mailto:msc@alahlifc.sa" class="d-flex" method="POST" enctype=”text/plain”>
-                        <input type="text" placeholder="<?php pll_e('Enter Your Email Address'); ?>">
-                        <button>
-                            <i class="fa-solid fa-arrow-right"></i>
-	
-                        </button>
-                    </form>
-                </div>
+            <div  class="row">               
+          
+                    <div class="col ">
+                    <a rel="example_group" href="<?php bloginfo('template_directory'); ?>/images/ar1.jpeg" title="">   <img src="<?php bloginfo('template_directory'); ?>/images/ar1.jpeg" class="img-fluid"  /></a>
+                      
+                        
+                    </div>
+               
+          
+                    <div class="col ">
+                    <a rel="example_group" href="<?php bloginfo('template_directory'); ?>/images/ar1.jpeg" title="">     <img src="<?php bloginfo('template_directory'); ?>/images/ar2.jpeg" class="img-fluid"  /></a>
+                        
+                    </div>
+               
+          
+                    <div class="col ">
+                    <a rel="example_group" href="<?php bloginfo('template_directory'); ?>/images/ar1.jpeg" title="">    <img src="<?php bloginfo('template_directory'); ?>/images/ar3.jpeg" class="img-fluid"  /></a>
+                        
+                    </div>
+             
+
+                   
+
             </div>
+            
         </div>
-    </div>
+     </section>
 
     <!-- footer  -->
     <footer>

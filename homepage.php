@@ -263,42 +263,42 @@ get_header('home');
 
 
     <!-- Management section  -->
-<section class="mt-5 mb-5 management">
-    <div class="container ">
-        <div class="row">
-        <h2><?php pll_e('Managements'); ?></h2>
-        </div>
-        <div class="row ">
-            
-        <?php query_posts(array(
-            'post_type' => 'management',
-            'posts_per_page' => 10,
-			'order' => 'desc'
-			
-        )); 
-		if (have_posts()) :  while (have_posts()) : the_post(); ?>
-        <?php $bg_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' ); ?>
-
-        <div class="p-2 col-md-4 col-12">
-            <div class="card-item p-4 d-flex flex-column justify-content-end"
-                style="min-height: 22.3rem; background-position: center; background: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0.9)), url('<?php echo $bg_image[0]?>'); background-size: cover;">
-                <a href="#" class="text-white">
-                    <h4 class="text-white" style="font-size: 16px;"><?php the_title()?></h4>
-                    <p class="text-white" style="font-size: 14px;"><?php the_field('designation'); ?></p>
-                </a>
+    <section class="mt-5 mb-5 management">
+        <div class="container ">
+            <div class="row">
+            <h2><?php pll_e('Managements'); ?></h2>
             </div>
-         </div>
-         <?php endwhile; wp_reset_query(); else : ?>
-			<h2><?php _e('Nothing Found','lbt_translate'); ?></h2>
-	        <?php endif; ?>
+            <div class="row ">
+                
+            <?php query_posts(array(
+                'post_type' => 'management',
+                'posts_per_page' => 10,
+                'order' => 'desc'
+                
+            )); 
+            if (have_posts()) :  while (have_posts()) : the_post(); ?>
+            <?php $bg_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' ); ?>
+
+            <div class="p-2 col-md-4 col-12">
+                <div class="card-item p-4 d-flex flex-column justify-content-end"
+                    style="min-height: 22.3rem; background-position: center; background: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0.9)), url('<?php echo $bg_image[0]?>'); background-size: cover;">
+                    <a href="#" class="text-white">
+                        <h4 class="text-white" style="font-size: 16px;"><?php the_title()?></h4>
+                        <p class="text-white" style="font-size: 14px;"><?php the_field('designation'); ?></p>
+                    </a>
+                </div>
+            </div>
+            <?php endwhile; wp_reset_query(); else : ?>
+                <h2><?php _e('Nothing Found','lbt_translate'); ?></h2>
+                <?php endif; ?>
+            </div>
+
+            
         </div>
-
-        
-    </div>
-</section>
+    </section>
 
 
-    <!-- Team Slider  -->
+    <!-- First Team Slider  -->
     <section class="team_slider" id="team">
         <div class="container">
             <h2><?php pll_e('First Team'); ?></h2>
@@ -345,10 +345,11 @@ get_header('home');
         <div class="_overlay"></div>
     </section>
 
-     
 
+    16315
+    <?php get_template_part('template-parts/woman' , 'news') ?>
 
-    
+         
      <!-- Our Partners section  -->
      <section class="tranning mt-5 mb-5">
         <div class="container">
@@ -389,36 +390,7 @@ get_header('home');
         </section>
 
 
-      <!-- player section  -->
-      <section class="newsection" id="membership">       
-        <div class="container">
-            <div  class="row">               
-          
-                    <div class="col ">
-                    <a rel="example_group" href="<?php bloginfo('template_directory'); ?>/images/ar1.jpeg" title="">   <img src="<?php bloginfo('template_directory'); ?>/images/ar1.jpeg" class="img-fluid"  /></a>
-                      
-                        
-                    </div>
-               
-          
-                    <div class="col ">
-                    <a rel="example_group" href="<?php bloginfo('template_directory'); ?>/images/ar1.jpeg" title="">     <img src="<?php bloginfo('template_directory'); ?>/images/ar2.jpeg" class="img-fluid"  /></a>
-                        
-                    </div>
-               
-          
-                    <div class="col ">
-                    <a rel="example_group" href="<?php bloginfo('template_directory'); ?>/images/ar1.jpeg" title="">    <img src="<?php bloginfo('template_directory'); ?>/images/ar3.jpeg" class="img-fluid"  /></a>
-                        
-                    </div>
-             
-
-                   
-
-            </div>
-            
-        </div>
-    </section>
+     
 
     <?php get_footer()?>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
