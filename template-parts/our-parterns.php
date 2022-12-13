@@ -5,6 +5,16 @@
          
         </div>
         <div class="container ">
+
+
+             <div class="row row-cols-md-4 row-cols-auto justify-content-center ">
+                    <div class="col partner ">                        
+                         <img src="<?php bloginfo('template_directory'); ?>/images/jaddah.png" alt="Featured Thumbnail" />
+                                       
+              </div>
+                    
+            </div>
+           
 			
             <div class="row row-cols-md-4 row-cols-auto justify-content-center ">
 
@@ -14,6 +24,7 @@
                         'order' => 'desc',
                     )); 
                     if (have_posts()) :  while (have_posts()) : the_post(); ?>
+                    <div class="partern_wrap">
                     <div class="col partner ">
                         <?php if ( has_post_thumbnail() ) {
                                                 the_post_thumbnail('full');
@@ -21,6 +32,7 @@
                                         <img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="Featured Thumbnail" />
                                         <?php } ?>
 
+                       </div>
                        </div>
                 
                 
