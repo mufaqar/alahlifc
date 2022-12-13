@@ -597,6 +597,10 @@ footer ul li a{
 footer ul{
     padding-left: 0;
 }
+.rtl footer ul{
+    padding-right: 0;
+}
+
 footer ul li a:hover{
     color: var(--blue);
     cursor: pointer;
