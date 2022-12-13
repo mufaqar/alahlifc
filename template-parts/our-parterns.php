@@ -7,7 +7,7 @@
         <div class="container ">
 
 
-             <div class="row row-cols-md-4 row-cols-auto justify-content-center ">
+             <div class="row row-cols-md-3 row-cols-auto justify-content-center ">
                     <div class="col partner ">                        
                          <img src="<?php bloginfo('template_directory'); ?>/images/jaddah.png" alt="Featured Thumbnail" />
                                        
