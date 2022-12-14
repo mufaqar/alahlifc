@@ -1,5 +1,5 @@
   <!-- Our Partners section  -->
-  <section class="tranning mt-5 mb-5">
+  <section class="tranning mt-5 mb-5" id="partners">
         <div class="container">
             <h2><?php pll_e('Our Partners'); ?></h2>
          
