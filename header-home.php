@@ -49,12 +49,6 @@ $image_3 = get_field('image_3', 'option');
 $day = get_field('day', 'option');
 $hours = get_field('hours', 'option');
 $minutes = get_field('minutes', 'option');
-
-
-
-
-
-
 ?>
 
 <header style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(<?php echo $slider_image?>);">
@@ -79,12 +73,12 @@ $minutes = get_field('minutes', 'option');
                                     $currentlang = get_bloginfo('language');
                                     
 
-                                    if($currentlang=="en-US"):
+                                    if($currentlang=="ar"):
                                 ?>
-                                  <a href="<?php echo home_url('/ar'); ?>" class="btn whitebtn"> Arabic </a>
+                                  <a href="<?php echo home_url('/'); ?>" class="btn whitebtn"> Arabic </a>
 
-                                <?php elseif($currentlang=="ar"): ?>
-                                    <a href="https://ewb.gpm.mybluehost.me" class="btn whitebtn"> English </a>
+                                <?php elseif($currentlang=="en-US"): ?>
+                                    <a href="<?php echo home_url('/en'); ?>" class="btn whitebtn"> English </a>
 
                                 <?php endif; ?>
                             </div>
