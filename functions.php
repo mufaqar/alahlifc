@@ -137,7 +137,7 @@ add_action('init', function() {
     pll_register_string('alahlifc_domain', 'Alahlifc News');
     pll_register_string('alahlifc_domain', 'Matches');
     pll_register_string('alahlifc_domain', 'Alahlifc Sports Football Club');
-    pll_register_string('alahlifc_domain', 'Worrldwide realese');
+    pll_register_string('alahlifc_domain', 'Worldwide realese');
     pll_register_string('alahlifc_domain', 'view all result');
     pll_register_string('alahlifc_domain', 'Next Matches');
     pll_register_string('alahlifc_domain', 'Tranning');
