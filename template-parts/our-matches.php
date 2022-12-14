@@ -70,7 +70,7 @@
                     </div>
 
                     <?php endwhile; wp_reset_query(); else : ?>
-			<h2><?php _e('Nothing Found','lbt_translate'); ?></h2>
+			<h6><?php _e('Nothing Found','alahlifc_domain'); ?></h6>
 	        <?php endif; ?> 
 
 
@@ -122,7 +122,7 @@
                             </div>
 
                             <?php endwhile; wp_reset_query(); else : ?>
-                        <h2><?php _e('Nothing Found','lbt_translate'); ?></h2>
+                        <h6><?php _e('Nothing Found','alahlifc_domain'); ?></h6>
                         <?php endif; ?> 
 
 
