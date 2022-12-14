@@ -79,11 +79,11 @@ $minutes = get_field('minutes', 'option');
                                     $currentlang = get_bloginfo('language');
                                     
 
-                                    if($currentlang=="en-US"):
+                                    if($currentlang=="ar"):
                                 ?>
                                   <a href="<?php echo home_url('/'); ?>" class="btn whitebtn"> Arabic </a>
 
-                                <?php elseif($currentlang=="ar"): ?>
+                                <?php elseif($currentlang=="en-US"): ?>
                                     <a href="<?php echo home_url('/en'); ?>" class="btn whitebtn"> English </a>
 
                                 <?php endif; ?>
