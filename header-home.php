@@ -71,9 +71,6 @@ $minutes = get_field('minutes', 'option');
 
                                 <?php
                                     $currentlang = get_bloginfo('language');
-                                   
-                                    
-
                                     if($currentlang=="ar"):
                                 ?>
                                   <a href="<?php echo home_url('/en'); ?>" class="btn whitebtn">English</a>
