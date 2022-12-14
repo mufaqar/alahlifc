@@ -84,7 +84,7 @@ $minutes = get_field('minutes', 'option');
                                   <a href="<?php echo home_url('/ar'); ?>" class="btn whitebtn"> Arabic </a>
 
                                 <?php elseif($currentlang=="ar"): ?>
-                                    <a href="https://ewb.gpm.mybluehost.me" class="btn whitebtn"> English </a>
+                                    <a href="https://ewb.gpm.mybluehost.me/en" class="btn whitebtn"> English </a>
 
                                 <?php endif; ?>
                             </div>

@@ -65,8 +65,7 @@ function pagination($pages = '', $range = 4)
 
 if (function_exists('register_nav_menus')) {
 register_nav_menus( array(
-		'top' => __( 'Top Menu 01', '' ),
-        'primary' => __( 'Primary Menu', '' ),
+	    'primary' => __( 'Primary Menu', '' ),
 		'footer' => __( 'Footer1 Menu', '' ),
 		'footer1' => __( 'Footer2 Menu', '' ),
 		'footer2' => __( 'Footer3 Menu', '' ),
