@@ -1,5 +1,5 @@
    <!-- Management section  -->
-   <section class="mt-5 mb-5 management">
+   <section class="mt-5 mb-5 management" id="management">
         <div class="container ">
             <div class="row">
             <h2><?php pll_e('Managements'); ?></h2>
