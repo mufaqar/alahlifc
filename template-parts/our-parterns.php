@@ -23,7 +23,13 @@
                         'posts_per_page' => -1,
                         'order' => 'desc',
                     )); 
-                    if (have_posts()) :  while (have_posts()) : the_post(); ?>
+				$count = 0;
+                    if (have_posts()) :  while (have_posts()) : the_post(); 
+					if($count == 4){ ?>
+					</div>
+					<div class="row row-cols-md-6 row-cols-auto justify-content-center ">
+				<?php } 
+						$count ++;?>
                     <div class="partern_wrap">
                     <div class="col partner ">
                         <?php if ( has_post_thumbnail() ) {
