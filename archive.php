@@ -57,8 +57,7 @@ get_header();
                         <div class="col-8 p-3 ">
                              <p class="date mt-3 mb-2"><?php the_time(get_option('date_format')); ?> </p>
                             <h4 class="mb-3"><a href="<?php the_permalink() ; ?>"><?php the_title()?></a></h4>
-                            <div class="d-flex justify-content-between auth-info">
-                                <p>By <span><?php echo get_the_author(); ?></span>  </p>
+                            <div class="d-flex justify-content-between auth-info">                              
                                 <p><?php the_time( 'g:i a' )?></p>
                             </div>
                         </div>
